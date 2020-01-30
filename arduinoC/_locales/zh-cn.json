@@ -1,0 +1,6 @@
+{
+    "CodeBlock.functionDeclare|block": "定义函数: [OUTPUT] [FUNCTION]([INPUT]){[CODE]}",
+    "CodeBlock.functionWithReturn|block": "调用带返回值函数: [FUNCTION]([INPUT])",
+    "CodeBlock.functionWithoutReturn|block": "调用不带返回值函数: [FUNCTION]([INPUT]);"
+
+}

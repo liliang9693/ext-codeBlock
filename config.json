@@ -1,0 +1,33 @@
+{
+  "name": {
+    "zh-cn": "代码生成器",
+    "en": "Code Block"
+  },
+  "description": {
+    "zh-cn": "直接在图形积木上书写代码实现图形化与代码混编。",
+    "en": "Write code directly on the graphics blocks to achieve graphic and code mixing."
+  },
+  "auther": "liliang",
+  "email": "969316753@qq.com",
+  "license": "MIT",
+  "isTest": false,
+  "isBoard": false,
+  "id": "CodeBlock",
+  "platform": [
+    "win"
+  ],
+  "asset": {
+    "arduinoC": {
+      "dir": "arduinoC/",
+      "version": "0.0.1",
+      "board": [
+        "arduino","leonardo","microbit","esp32","mega2560","vortex","romeo", "arduinounor3","maxbot","maqueen","max","arduinonano"
+      ],
+      "main": "main.ts",
+      "files": [
+        "_locales/zh-cn.json",
+        "_images/icon.svg"
+      ]
+    }
+  }
+}
