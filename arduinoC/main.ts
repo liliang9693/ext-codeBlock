@@ -85,6 +85,20 @@ namespace CodeBlock {
 
         
     }
+    
+    //% block="Code:[CODE]"   blockType="reporter"
+    //% CODE.shadow="string" CODE.defl="/*code any*/"
+
+    export function codeAnyRp(parameter:any){
+        let code=parameter.CODE.code;
+    
+        if(code.substring(0,1)=="\"") code=code.substring(1,code.length-1);
+
+ 
+        Generator.addCode([`${code}`, Generator.ORDER_UNARY_POSTFIX]);
+
+        
+    }
     //% block="function Declare: [OUTPUT] [FUNCTION]([INPUT]){[CODE]}" blockType="command"
     //% OUTPUT.shadow="string" OUTPUT.defl="float"
     //% FUNCTION.shadow="string" FUNCTION.defl="functionName"

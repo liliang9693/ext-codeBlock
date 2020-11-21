@@ -16,12 +16,13 @@
   "platform": [
     "win"
   ],
+  "version": "0.0.2",
   "asset": {
     "arduinoC": {
       "dir": "arduinoC/",
-      "version": "0.0.1",
+      "version": "0.0.2",
       "board": [
-        "arduino","leonardo","microbit","esp32","mega2560","vortex","romeo", "arduinounor3","maxbot","maqueen","max","arduinonano"
+        "arduino","leonardo","microbit","esp32","mega2560","vortex","romeo", "arduinounor3","maxbot","maqueen","max","arduinonano","firebeetleesp32","telloesp32","maixduino"
       ],
       "main": "main.ts",
       "files": [
