@@ -4,7 +4,7 @@
     "en": "Code Block"
   },
   "description": {
-    "zh-cn": "直接在图形积木上书写代码实现图形化与代码混编。",
+    "zh-cn": "直接在图形积木上书写代码，实现图形化与代码混编。",
     "en": "Write code directly on the graphics blocks to achieve graphic and code mixing."
   },
   "auther": "liliang",
@@ -13,22 +13,33 @@
   "isTest": false,
   "isBoard": false,
   "id": "CodeBlock",
-  "platform": [
-    "win"
-  ],
-  "version": "0.0.2",
+  "platform": ["win"],
+  "version": "0.0.3",
   "asset": {
     "arduinoC": {
       "dir": "arduinoC/",
-      "version": "0.0.2",
+      "version": "0.0.3",
       "board": [
-        "arduino","leonardo","microbit","esp32","mega2560","vortex","romeo", "arduinounor3","maxbot","maqueen","max","arduinonano","firebeetleesp32","telloesp32","maixduino"
+        "arduino",
+        "leonardo",
+        "microbit",
+        "esp32",
+        "mega2560",
+        "vortex",
+        "romeo",
+        "arduinounor3",
+        "maxbot",
+        "maqueen",
+        "max",
+        "arduinonano",
+        "firebeetleesp32",
+        "telloesp32",
+        "maixduino",
+        "firebeetleesp32e",
+        "esp8266",
+        "pico"
       ],
-      "main": "main.ts",
-      "files": [
-        "_locales/zh-cn.json",
-        "_images/icon.svg"
-      ]
+      "main": "main.ts"
     }
   }
 }
