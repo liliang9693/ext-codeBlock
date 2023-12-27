@@ -14,11 +14,11 @@
   "isBoard": false,
   "id": "CodeBlock",
   "platform": ["win"],
-  "version": "0.0.3",
+  "version": "0.0.4",
   "asset": {
     "arduinoC": {
       "dir": "arduinoC/",
-      "version": "0.0.3",
+      "version": "0.0.4",
       "board": [
         "arduino",
         "leonardo",

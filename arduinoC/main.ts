@@ -15,6 +15,7 @@ namespace CodeBlock {
     export function define(parameter:any){
         let str=parameter.STR.code;
         if(str.substring(0,1)=="\"")  str=str.substring(1,str.length-1);
+        str = removeSlash(str);
         Generator.addInclude(`CodeBlockDefine${str}`,`#define ${str}`);
 
         
@@ -52,7 +53,7 @@ namespace CodeBlock {
         let obj=parameter.OBJ.code;
 
         if(obj.substring(0,1)=="\"")  obj=obj.substring(1,obj.length-1);
-
+        obj = removeSlash(obj);
  
         Generator.addObject(`CodeBlockObjectAny${obj}`," ",`${obj}`);
 
@@ -64,7 +65,7 @@ namespace CodeBlock {
 
     export function setupAny(parameter:any){
         let code=parameter.SETUP.code;
-
+        code = removeSlash(code);
         if(code.substring(0,1)=="\"")  code=code.substring(1,code.length-1);
 
  
@@ -77,7 +78,7 @@ namespace CodeBlock {
 
     export function codeAny(parameter:any){
         let code=parameter.CODE.code;
-    
+        code = removeSlash(code);
         if(code.substring(0,1)=="\"") code=code.substring(1,code.length-1);
 
  
@@ -91,7 +92,7 @@ namespace CodeBlock {
 
     export function codeAnyRp(parameter:any){
         let code=parameter.CODE.code;
-    
+        code = removeSlash(code);
         if(code.substring(0,1)=="\"") code=code.substring(1,code.length-1);
 
  
@@ -128,7 +129,7 @@ namespace CodeBlock {
 
         if(fct.substring(0,1)=="\"")  fct=fct.substring(1,fct.length-1);
         if(input.substring(0,1)=="\"")  input=input.substring(1,input.length-1);
-
+        input = removeSlash(input);
         Generator.addCode(`${fct}(${input})`);    
     }
 
@@ -141,8 +142,15 @@ namespace CodeBlock {
 
         if(fct.substring(0,1)=="\"")  fct=fct.substring(1,fct.length-1);
         if(input.substring(0,1)=="\"")  input=input.substring(1,input.length-1);
-
+        input = removeSlash(input);
         Generator.addCode(`${fct}(${input});`);    
     }
-   
+
+
+    function removeSlash(str: string): string {
+      const regex = /\\/g;
+      return str.replace(regex, '');
+    }
+
+
 }
