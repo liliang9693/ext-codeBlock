@@ -18,6 +18,7 @@
 ## Blocks
 
 ![](./arduinoC/_images/block.png)
+![](./micropython/_images/block.png)
 
 ## 示例
 ![](./arduinoC/_images/example.png)
@@ -32,9 +33,9 @@ MIT
 
 MCU                | JavaScript    | Arduino   | MicroPython    | Remarks
 ------------------ | :----------: | :----------: | :---------: | -----
-micro:bit        |             |       √       |             | 
-mpython        |             |        √      |             | 
-arduino uno    |             |        √      |             | 
+micro:bit        |             |       √       |     √         | 
+mpython        |             |        √      |      √        | 
+arduino uno    |             |        √      |     √         | 
  
 
 ## 更新日志
@@ -42,6 +43,7 @@ arduino uno    |             |        √      |             |
 - V0.0.2  增加圆形任意code积木，支持新的几块板子
 - V0.0.3  优化生成代码增加id，支持新的几块板子
 - V0.0.4  去除转义字符
+- V0.0.5  增加microPython模式支持
 
 
 

@@ -14,7 +14,7 @@
   "isBoard": false,
   "id": "CodeBlock",
   "platform": ["win"],
-  "version": "0.0.4",
+  "version": "0.0.5",
   "asset": {
     "arduinoC": {
       "dir": "arduinoC/",
@@ -37,6 +37,17 @@
         "maixduino",
         "firebeetleesp32e",
         "esp8266",
+        "pico"
+      ],
+      "main": "main.ts"
+    },
+    "micropython": {
+      "dir": "micropython/",
+      "version": "0.0.1",
+      "board": [
+        "esp32",
+        "maixduino",
+        "microbit",
         "pico"
       ],
       "main": "main.ts"
