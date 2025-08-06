@@ -14,11 +14,11 @@
   "isBoard": false,
   "id": "CodeBlock",
   "platform": ["win"],
-  "version": "0.0.5",
+  "version": "0.0.6",
   "asset": {
     "arduinoC": {
       "dir": "arduinoC/",
-      "version": "0.0.4",
+      "version": "0.0.5",
       "board": [
         "arduino",
         "leonardo",
@@ -37,13 +37,14 @@
         "maixduino",
         "firebeetleesp32e",
         "esp8266",
-        "pico"
+        "pico",
+        "esp32s3bit"
       ],
       "main": "main.ts"
     },
     "micropython": {
       "dir": "micropython/",
-      "version": "0.0.1",
+      "version": "0.0.2",
       "board": [
         "esp32",
         "maixduino",

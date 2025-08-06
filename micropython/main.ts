@@ -36,6 +36,9 @@ namespace CodeBlock {
         
     }
 
+    //% block="---"
+    export function noteSep1() {}
+
   
     //% block="[OBJ] [OBJNAME]"   blockType="command"
     //% OBJ.shadow="string" OBJ.defl="Test"
@@ -66,9 +69,12 @@ namespace CodeBlock {
         
     }
 
+    
+    //% block="---"
+    export function noteSep2() {}
+
     //% block="setUp:[SETUP]"   blockType="command"
     //% SETUP.shadow="string" SETUP.defl="print('hello world')"
-
     export function setupAny(parameter:any){
         let code=parameter.SETUP.code;
         code = removeSlash(code);
@@ -79,9 +85,14 @@ namespace CodeBlock {
 
         
     }
+
+    
+    //% block="---"
+    export function noteSep3() {}
+
+
     //% block="Code:[CODE]"   blockType="command"
     //% CODE.shadow="string" CODE.defl="print('hello world')"
-
     export function codeAny(parameter:any){
         let code=parameter.CODE.code;
         code = removeSlash(code);
@@ -95,7 +106,6 @@ namespace CodeBlock {
     
     //% block="Code:[CODE]"   blockType="reporter"
     //% CODE.shadow="string" CODE.defl="1"
-
     export function codeAnyRp(parameter:any){
         let code=parameter.CODE.code;
         code = removeSlash(code);
@@ -119,6 +129,7 @@ namespace CodeBlock {
 
         
     }
+    
     function removeSlash(str: string): string {
       const regex = /\\/g;
       return str.replace(regex, '');

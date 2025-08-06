@@ -29,7 +29,10 @@ namespace CodeBlock {
 
         
     }
-  
+
+    //% block="---"
+    export function noteSep1() {}
+
     //% block="[OBJ] [OBJNAME];"   blockType="command"
     //% OBJ.shadow="string" OBJ.defl="Test"
     //% OBJNAME.shadow="string" OBJNAME.defl="test"
@@ -48,7 +51,6 @@ namespace CodeBlock {
 
     //% block="[OBJ]"   blockType="command"
     //% OBJ.shadow="string" OBJ.defl="//object any"
-
     export function objectAny(parameter:any){
         let obj=parameter.OBJ.code;
 
@@ -60,9 +62,13 @@ namespace CodeBlock {
         
     }
 
+    
+    //% block="---"
+    export function noteSep2() {}
+
+
     //% block="setUp:[SETUP]"   blockType="command"
     //% SETUP.shadow="string" SETUP.defl="//setup any;"
-
     export function setupAny(parameter:any){
         let code=parameter.SETUP.code;
         code = removeSlash(code);
@@ -73,9 +79,14 @@ namespace CodeBlock {
 
         
     }
+
+    
+    //% block="---"
+    export function noteSep3() {}
+
+
     //% block="Code:[CODE];"   blockType="command"
     //% CODE.shadow="string" CODE.defl="//code any"
-
     export function codeAny(parameter:any){
         let code=parameter.CODE.code;
         code = removeSlash(code);
@@ -89,7 +100,6 @@ namespace CodeBlock {
     
     //% block="Code:[CODE]"   blockType="reporter"
     //% CODE.shadow="string" CODE.defl="/*code any*/"
-
     export function codeAnyRp(parameter:any){
         let code=parameter.CODE.code;
         code = removeSlash(code);
@@ -100,6 +110,11 @@ namespace CodeBlock {
 
         
     }
+    
+    //% block="---"
+    export function noteSep4() {}
+
+
     //% block="function Declare: [OUTPUT] [FUNCTION]([INPUT]){[CODE]}" blockType="command"
     //% OUTPUT.shadow="string" OUTPUT.defl="float"
     //% FUNCTION.shadow="string" FUNCTION.defl="functionName"
